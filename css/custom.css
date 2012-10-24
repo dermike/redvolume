@@ -1,0 +1,60 @@
+.red { color: red; }
+
+.datum {
+	font-size: 10px;
+
+}
+
+#banner, .span3 .well {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+#aboutcontent p a, #maincontent p a, .footer a {
+    color:red;
+	text-decoration: none;
+}
+
+#aboutcontent p a.ext, #maincontent p a.ext {
+	background: url(../img/ext.png) center right no-repeat;
+	padding-right: 13px;
+}
+
+#aboutcontent p a:hover.ext, #maincontent p a:hover.ext {
+	background: url(../img/ext_hover.png) center right no-repeat;
+	padding-right: 13px;
+    color:#fff;
+    background-color: red;
+}	
+
+#aboutcontent p a:hover, #maincontent p a:hover {
+    color:#fff;
+    background: red;
+	text-decoration: none;
+}
+
+#listen-latest {
+	display: block;
+	margin-top: 15px;
+	}
+	
+.vinyl {
+-webkit-border-radius: 75px;
+-moz-border-radius: 75px;
+border-radius: 75px;	
+}
+
+.label {
+	white-space: nowrap;
+	line-height: 21px;
+}
+
+#maincontent h1, #maincontent h2, #maincontent h3 {
+	line-height: 100%;
+}
+
+small {
+	line-height: 80%;
+}
