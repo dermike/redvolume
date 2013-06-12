@@ -11,49 +11,100 @@
 	<atom:link href="http://redvolume.com/rss.xml" rel="self" type="application/rss+xml" />
 	<link>http://redvolume.com</link>
 	<description>Redvolume Records, Swedish dubstep label</description>
-	<pubDate>Fri, 24 Feb 2012 08:11:52 +0000</pubDate>
+	<pubDate>Wed, 12 Jun 2013 08:11:52 +0000</pubDate>
 	<language>en</language>
 	<sy:updatePeriod>daily</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 
 <item>
-	<title>That Berlin feeling</title>
-	<link>http://redvolume.com/</link>
-	<pubDate>Fri, 24 Feb 2012 08:11:52 +0000</pubDate>
-	<dc:creator>Mikael Jergefelt</dc:creator>
-	<guid isPermaLink="false">http://redvolume.com/?21</guid>
-	<description><![CDATA[If you haven't heard Subject Lost's first release on Redvolume yet, it just got online on Spotify today, along with our three previous releases. Sorry for the delay! The sound can best be described as "L-Wiz meets Berlin" from our point of view, and we hope you will love it as much as we do. Check it out on Spotify, or buy the 320s and WAV's over at Beatport.]]></description>
-		<content:encoded><![CDATA[<p>If you haven't heard <a class="ext" href="http://soundcloud.com/subject-lost">Subject Lost's</a> first release on Redvolume yet, it just got online on Spotify today, along with our <a class="ext" href="http://open.spotify.com/user/dermike/playlist/6WU5ehSeXngZ2M4i2O6v01">three previous</a> releases. Sorry for the delay! The sound can best be described as "L-Wiz meets Berlin" from our point of view, and we hope you will love it as much as we do. Check it out on <a class="ext" href="http://open.spotify.com/album/3FIdI6ZAVpQ0d7ZbdkrIVx">Spotify</a>, or buy the 320s and WAV's over at <a class="ext" href="http://www.beatport.com/release/hyperculture-shifting-sites/856500">Beatport</a>.</p>]]></content:encoded>
+
+    <title>Glitch out!</title>
+
+    <link>http://redvolume.com/</link>
+
+    <pubDate>Wed, 12 Jun 2013 08:11:52 +0000</pubDate>
+
+    <dc:creator>Mikael Jergefelt</dc:creator>
+
+    <guid isPermaLink="false">http://redvolume.com/?22</guid>
+
+    <description><![CDATA[This week started with the release of Stolen Mech's "Sundog for Basstard", which style is a first here on Redvolume. Glitch with a touch of IDM. One second you're embraced by chilled out breaks and in the next, glitchy wobbles from all sides together with oozing synths. Stream it from Spotify, or buy from any of the stores to the left, e.g. Beatport.]]></description>
+
+    <content:encoded><![CDATA[<p>This week started with the release of Stolen Mech's "Sundog for Basstard", which style is a first here on Redvolume. Glitch with a touch of IDM. One second you're embraced by chilled out breaks and in the next, glitchy wobbles from all sides together with oozing synths. Stream it from <a class="ext" href="http://open.spotify.com/album/0UfzKRX472kTy0dajF9Xzt">Spotify</a>, or buy from any of the stores to the left, e.g. <a class="ext" href="http://www.beatport.com/release/sundog-for-basstard/1097245">Beatport</a>.</p>]]></content:encoded>
 </item>
 
 <item>
-	<title>L-Wiz Gold</title>
-	<link>http://redvolume.com/</link>
-	<pubDate>Sat, 21 Jan 2012 08:11:52 +0000</pubDate>
-	<dc:creator>Mikael Jergefelt</dc:creator>
-	<guid isPermaLink="false">http://redvolume.com/?20</guid>
-	<description><![CDATA[Congratulations to L-Wiz winning the Swedish national radio's P3 Guld prize tonight! The prize is a celebration of Swedish music and was awarded in Gothenburg. Among the other nominees were Avicii, Axel Boman, Jonsson/Alter and Rebecca & Fiona. This is a huge moment for Swedish dubstep! Back to the party…]]></description>
-		<content:encoded><![CDATA[<p>Congratulations to <a class="ext" href="https://www.facebook.com/groups/11912949748/">L-Wiz</a> winning the Swedish national radio's <a class="ext" href="http://sverigesradio.se/sida/artikel.aspx?programid=3964&artikel=4838017">P3 Guld</a> prize tonight! The prize is a celebration of Swedish music and was awarded in Gothenburg. Among the other nominees were Avicii, Axel Boman, Jonsson/Alter and Rebecca &amp; Fiona. This is a huge moment for Swedish dubstep! <a class="ext" href="http://open.spotify.com/artist/0nGg1te3vliCXlKbYHLF9B">Back to the party</a>…</p>]]></content:encoded>
+
+    <title>That Berlin feeling</title>
+
+    <link>http://redvolume.com/</link>
+
+    <pubDate>Fri, 24 Feb 2012 08:11:52 +0000</pubDate>
+
+    <dc:creator>Mikael Jergefelt</dc:creator>
+
+    <guid isPermaLink="false">http://redvolume.com/?21</guid>
+
+    <description><![CDATA[If you haven't heard Subject Lost's first release on Redvolume yet, it just got online on Spotify today, along with our three previous releases. Sorry for the delay! The sound can best be described as "L-Wiz meets Berlin" from our point of view, and we hope you will love it as much as we do. Check it out on Spotify, or buy the 320s and WAV's over at Beatport.]]></description>
+
+    <content:encoded><![CDATA[<p>If you haven't heard <a class="ext" href="http://soundcloud.com/subject-lost">Subject Lost's</a> first release on Redvolume yet, it just got online on Spotify today, along with our <a class="ext" href="http://open.spotify.com/user/dermike/playlist/6WU5ehSeXngZ2M4i2O6v01">three previous</a> releases. Sorry for the delay! The sound can best be described as "L-Wiz meets Berlin" from our point of view, and we hope you will love it as much as we do. Check it out on <a class="ext" href="http://open.spotify.com/album/3FIdI6ZAVpQ0d7ZbdkrIVx">Spotify</a>, or buy the 320s and WAV's over at <a class="ext" href="http://www.beatport.com/release/hyperculture-shifting-sites/856500">Beatport</a>.</p>]]></content:encoded>
 </item>
 
-<item>
-	<title>On Spotify</title>
-	<link>http://redvolume.com/</link>
-	<pubDate>Thu, 24 Nov 2011 08:11:52 +0000</pubDate>
-	<dc:creator>Mikael Jergefelt</dc:creator>
-	<guid isPermaLink="false">http://redvolume.com/?19</guid>
-	<description><![CDATA[Distributor ST Holdings has withdrawn 234 labels from Spotify, removing a big chunk of dubstep from the streaming music service. It's a sad decision for all dubstep fans out there, and Redvolume promise to always keep it's music on there, which is available in this playlist.]]></description>
-		<content:encoded><![CDATA[<p>Distributor <a class="ext" href="http://stholdings.co.uk">ST Holdings</a> has <a class="ext" href="http://www.washingtonpost.com/business/technology/spotify-other-streaming-services-lose-more-than-200-labels/2011/11/18/gIQA1i7KZN_story.html">withdrawn 234 labels</a> from Spotify, removing a big chunk of dubstep from the streaming music service. It's a sad decision for all dubstep fans out there, and Redvolume promise to always keep it's music on there, which is available in this <a class="ext" href="http://open.spotify.com/user/dermike/playlist/6WU5ehSeXngZ2M4i2O6v01">playlist</a>.</p>]]></content:encoded>
-</item>
 
 <item>
-	<title>Steve Jobs 1955-2011</title>
-	<link>http://redvolume.com/</link>
-	<pubDate>Thu, 06 Oct 2011 08:11:52 +0000</pubDate>
-	<dc:creator>Mikael Jergefelt</dc:creator>
-	<guid isPermaLink="false">http://redvolume.com/?18</guid>
-	<description><![CDATA[Thank you Steve for all you've done! Redvolume might not have existed today if it wasn't for you. In sorrow, our iPhone app will be a free download for the rest of the year.]]></description>
-		<content:encoded><![CDATA[<p>Thank you <a class="ext" href="http://www.apple.com/stevejobs/">Steve</a> for all you've done! Redvolume might not have existed today if it wasn't for you. In sorrow, our <a class="ext" href="http://itunes.apple.com/app/redvolume-records/id354127065?mt=8">iPhone app</a> will be a free download for the rest of the year.</p>]]></content:encoded>
+
+    <title>L-Wiz Gold</title>
+
+    <link>http://redvolume.com/</link>
+
+    <pubDate>Sat, 21 Jan 2012 08:11:52 +0000</pubDate>
+
+    <dc:creator>Mikael Jergefelt</dc:creator>
+
+    <guid isPermaLink="false">http://redvolume.com/?20</guid>
+
+    <description><![CDATA[Congratulations to L-Wiz winning the Swedish national radio's P3 Guld prize tonight! The prize is a celebration of Swedish music and was awarded in Gothenburg. Among the other nominees were Avicii, Axel Boman, Jonsson/Alter and Rebecca & Fiona. This is a huge moment for Swedish dubstep! Back to the party…]]></description>
+
+    <content:encoded><![CDATA[<p>Congratulations to <a class="ext" href="https://www.facebook.com/groups/11912949748/">L-Wiz</a> winning the Swedish national radio's <a class="ext" href="http://sverigesradio.se/sida/artikel.aspx?programid=3964&artikel=4838017">P3 Guld</a> prize tonight! The prize is a celebration of Swedish music and was awarded in Gothenburg. Among the other nominees were Avicii, Axel Boman, Jonsson/Alter and Rebecca &amp; Fiona. This is a huge moment for Swedish dubstep! <a class="ext" href="http://open.spotify.com/artist/0nGg1te3vliCXlKbYHLF9B">Back to the party</a>…</p>]]></content:encoded>
+
+</item>
+
+
+<item>
+
+    <title>On Spotify</title>
+
+    <link>http://redvolume.com/</link>
+
+    <pubDate>Thu, 24 Nov 2011 08:11:52 +0000</pubDate>
+
+    <dc:creator>Mikael Jergefelt</dc:creator>
+
+    <guid isPermaLink="false">http://redvolume.com/?19</guid>
+
+    <description><![CDATA[Distributor ST Holdings has withdrawn 234 labels from Spotify, removing a big chunk of dubstep from the streaming music service. It's a sad decision for all dubstep fans out there, and Redvolume promise to always keep it's music on there, which is available in this playlist.]]></description>
+
+    <content:encoded><![CDATA[<p>Distributor <a class="ext" href="http://stholdings.co.uk">ST Holdings</a> has <a class="ext" href="http://www.washingtonpost.com/business/technology/spotify-other-streaming-services-lose-more-than-200-labels/2011/11/18/gIQA1i7KZN_story.html">withdrawn 234 labels</a> from Spotify, removing a big chunk of dubstep from the streaming music service. It's a sad decision for all dubstep fans out there, and Redvolume promise to always keep it's music on there, which is available in this <a class="ext" href="http://open.spotify.com/user/dermike/playlist/6WU5ehSeXngZ2M4i2O6v01">playlist</a>.</p>]]></content:encoded>
+
+</item>
+
+
+<item>
+
+    <title>Steve Jobs 1955-2011</title>
+
+    <link>http://redvolume.com/</link>
+
+    <pubDate>Thu, 06 Oct 2011 08:11:52 +0000</pubDate>
+
+    <dc:creator>Mikael Jergefelt</dc:creator>
+
+    <guid isPermaLink="false">http://redvolume.com/?18</guid>
+
+    <description><![CDATA[Thank you Steve for all you've done! Redvolume might not have existed today if it wasn't for you. In sorrow, our iPhone app will be a free download for the rest of the year.]]></description>
+
+    <content:encoded><![CDATA[<p>Thank you <a class="ext" href="http://www.apple.com/stevejobs/">Steve</a> for all you've done! Redvolume might not have existed today if it wasn't for you. In sorrow, our <a class="ext" href="http://itunes.apple.com/app/redvolume-records/id354127065?mt=8">iPhone app</a> will be a free download for the rest of the year.</p>]]></content:encoded>
+
 </item>
 
 <item>
