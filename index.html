@@ -116,8 +116,8 @@
         </div>
         
         <div class="span3">
-			<div class="alert alert-success">
-			  <a class="close" onclick="$('.alert').hide(200); return false;" href="#">×</a>
+			<div class="alert alert-success" style="display: none;">
+			  <a class="close" onclick="alertClick(); return false;" href="#">×</a>
 			  <h3 class="alert-heading">Get the music!</h3>
 			  Explore and purchase the sounds of Redvolume in these digital music stores.
 			</div>
@@ -148,8 +148,18 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    function alertClick() {
+      sessionStorage.setItem('musicalert',1);
+      $('.alert').hide(200);
+    }
+    
     $(document).ready(function() {
       $(".applink").click(function() { window.location = $(this).attr("href"); return false; });
+
+      if (!sessionStorage.musicalert) {
+        $('.alert').show(0);
+      }
+
     });
     </script>
     
