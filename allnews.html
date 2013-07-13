@@ -253,14 +253,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
     function alertClick() {
-      sessionStorage.setItem('musicalert',1);
+      localStorage.setItem('musicalert',1);
       $('.alert').hide(200);
     }
     
     $(document).ready(function() {
       $(".applink").click(function() { window.location = $(this).attr("href"); return false; });
       
-      if (!sessionStorage.musicalert) {
+      if (!localStorage.musicalert) {
         $('.alert').show(0);
       }      
       
