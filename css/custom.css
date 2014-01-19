@@ -6,7 +6,7 @@ body {
 	padding-top: 70px;
 }
 
-.discography .col-md-3 {
+.discography .col-md-3, .news .col-md-4 {
 	margin-bottom: 20px;
 }
 
