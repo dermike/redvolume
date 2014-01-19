@@ -20,14 +20,8 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
-	<link rel="icon" type="image/png" href="favicon.png" />
+	  <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="apple-touch-icon" href="ico/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
@@ -35,23 +29,24 @@
 
   <body>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
-          <a class="brand applink" href="index.html"><span class="red">RED</span>VOLUME RECORDS</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a class="applink" href="index.html">Home</a></li>
-              <li><a class="applink" href="releases.html">Releases</a></li>
-              <li class="active"><a class="applink" href="about.html">About &amp; Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+          </button>
+          <a class="navbar-brand" href="#"><span class="red">RED</span>VOLUME RECORDS</a>
         </div>
+        <div class="collapse navbar-collapse">
+          <ul id="menu" class="nav navbar-nav">
+            <li><a class="applink" href="index.html">Home</a></li>
+            <li><a class="applink" href="releases.html">Releases</a></li>
+            <li class="active"><a class="applink" href="about.html">About &amp; Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
@@ -60,21 +55,21 @@
     
 	  <div id="aboutcontent" class="row">
 	    
-	    <div class="span8">
+	    <div class="col-md-8">
 	    <h1><span class="red">About</span> Redvolume</h1>
 	    <hr />
 	        <p class="lead">The label was set up late 2006, by Mikael Jergefelt, with the simple goal of releasing all kinds of dubstep sounds. Based in Stockholm, there's also a special focus on Scandinavian talents. Check out the <a class="applink" href="releases.html" title="Redvolume releases">releases</a> section to discover quality nordic beats from <a class="ext" href="http://www.myspace.com/lwizdubstep" title="L-Wiz myspace">L-Wiz</a> (Sweden), <a class="ext" href="https://www.facebook.com/POJSL" title="JSL's myspace">JSL aka RUF</a> (Denmark) and <a class="ext" href="http://www.myspace.com/teslarok" title="Tes La Rok's myspace">Tes La Rok</a> (Finland).</p>
 
-	          <a class="btn btn-primary btn-large btn-inverse" onclick="window.location='mai'+'lto:'+'mi'+'ke@'+'redvolu'+'me.'+'c'+'om'; return false;"> 
+	          <a class="btn btn-default btn-lg" onclick="window.location='mai'+'lto:'+'mi'+'ke@'+'redvolu'+'me.'+'c'+'om'; return false;"><span class="glyphicon glyphicon-send"></span> 
 	            Get in touch
 	          </a><br /><noscript><p class="lead">Email to mike at this domain name</p></noscript><br />
 	    </div>
 	      
-	    <div class="span4">
+	    <div class="col-md-4">
 	      <h2><span class="red">License</span> music?</h2>
 	      <hr />
 	      <p class="lead">We're always open to license music for other projects than our own, just get in touch. We'd love to hear about it! Here's what we've <a class="applink" href="releases.html#license">done so far</a>.</p>
-	      <p class="lead">For sync purposes, licenses can be purchased directly from <a href="http://www.syncsquirrel.com/music/red+volume">SyncSquirrel</a>.</p>
+	      <p class="lead">For sync purposes, licenses can be purchased directly from <a class="ext" href="http://www.syncsquirrel.com/music/red+volume">SyncSquirrel</a>.</p>
 	    </div><!-- span4 -->
 
 	  </div><!-- row -->
@@ -86,21 +81,21 @@
 	       
       
       <div class="row">
-        <div class="span4">
+        <div class="col-md-4">
           <h3><span class="red">L-Wiz</span> - Mojito</h3>
           <blockquote>
             <p>An aural beauty is born from the fantastic Redvolume Camp.</p>
             <small>Kmag Issue March 2009</small>
           </blockquote>
         </div><!-- span 4 -->
-        <div class="span4">
+        <div class="col-md-4">
           <h3><span class="red">Catalogue</span> Part One</h3>
           <blockquote>
             <p>Label boss Mikael Jergefelt has been steadily tending to his Scandinavian flock over the past couple of years and nurturing a blossoming imprint.</p>
             <small>ATM Magazine Issue 76 2008</small>
           </blockquote>
         </div><!-- span 4 -->
-        <div class="span4">
+        <div class="col-md-4">
           <h3><span class="red">Recommended</span>: RVOL004</h3>
           <blockquote>
             <p>Redvolume's output has been strong so far, dealing out the filthy and the sublime in equal measures, and this twelve is no different.</p>
