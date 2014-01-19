@@ -1,15 +1,43 @@
+h1, h2, h3 {
+	margin: 5px 0px;
+}
+
+body {
+	padding-top: 70px;
+}
+
+.discography .col-md-3 {
+	margin-bottom: 20px;
+}
+
+.page-header {
+	margin-top: 0px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff;
+}
+
 .red { color: red; }
 
 .datum {
 	font-size: 10px;
-
 }
 
-#banner, .span3 .well {
+ol, ul {
+    padding-left: 0px;
+    list-style-position: inside;
+}
+
+#banner, .well {
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	margin-bottom: 10px;
+}
+
+#banner {
+  width: 100%;
 }
 
 #aboutcontent p a, #maincontent p a, .footer a {
@@ -17,16 +45,18 @@
 	text-decoration: none;
 }
 
-#aboutcontent p a.ext, #maincontent p a.ext {
-	background: url(../img/ext.png) center right no-repeat;
-	padding-right: 13px;
-}
-
-#aboutcontent p a:hover.ext, #maincontent p a:hover.ext {
-	background: url(../img/ext_hover.png) center right no-repeat;
-	padding-right: 13px;
-    color:#fff;
-    background-color: red;
+.ext:after {
+	content: "\e095";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 3px;
 }	
 
 #aboutcontent p a:hover, #maincontent p a:hover {
