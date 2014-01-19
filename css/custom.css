@@ -18,6 +18,21 @@ body {
 	color: #fff;
 }
 
+.navbar-inverse .navbar-toggle {
+  background-color: #222;
+  border-color: #222;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #222;
+  box-shadow: none;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:active {
+  background-color: #222;
+}
+
 .red { color: red; }
 
 .datum {
