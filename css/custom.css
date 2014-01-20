@@ -6,6 +6,12 @@ body {
 	padding-top: 70px;
 }
 
+.lead {
+	font-size: 21px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
 .discography .col-md-3, .news .col-md-4 {
 	margin-bottom: 20px;
 }
