@@ -1,4 +1,6 @@
 config.codekit
 /node_modules
 /out
+css/bundle.css
+js/all.js
 .DS_Store
