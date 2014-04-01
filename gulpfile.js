@@ -5,7 +5,7 @@ var uncss = require('gulp-uncss'),
     uglify = require('gulp-uglify'),
     minifycss = require('gulp-minify-css');
 
-gulp.task('default', function() {
+gulp.task('css', function() {
   gulp.src(['css/bootstrap.css', 'css/custom.css'])
     .pipe(uncss({
       html: ['index.html', 'about.html', 'allnews.html', 'releases.html'],
@@ -13,12 +13,14 @@ gulp.task('default', function() {
     }))
     .pipe(concatCss("bundle.css"))
     .pipe(minifycss())
-    .pipe(gulp.dest('./out'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('scripts', function() {
   gulp.src(['js/jquery-2.1.0.js', 'js/bootstrap.js'])
     .pipe(uglify())
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('./out'))
+    .pipe(gulp.dest('./js'))
 });
+
+gulp.task('default', ['css', 'scripts']);
