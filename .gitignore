@@ -1,6 +1,6 @@
 config.codekit
 /node_modules
-/out
+bower_components/
 css/bundle.css
 js/all.js
 .DS_Store

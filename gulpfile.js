@@ -6,7 +6,7 @@ var uncss = require('gulp-uncss'),
     minifycss = require('gulp-minify-css');
 
 gulp.task('css', function() {
-  gulp.src(['css/bootstrap.css', 'css/custom.css'])
+  gulp.src(['bower_components/bootstrap/dist/css/bootstrap.css', 'css/custom.css'])
     .pipe(uncss({
       html: ['index.html', 'about.html', 'allnews.html', 'releases.html'],
       ignore: ['.collapsing', '.collapse.in'] // Classes added by JS for navbar collapse
@@ -17,7 +17,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('scripts', function() {
-  gulp.src(['js/jquery-2.1.0.js', 'js/bootstrap.js'])
+  gulp.src(['bower_components/jquery/dist/jquery.js', 'bower_components/bootstrap/dist/js/bootstrap.js'])
     .pipe(uglify())
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./js'));
