@@ -17,7 +17,9 @@ gulp.task('css', function() {
 });
 
 gulp.task('scripts', function() {
-  gulp.src(['bower_components/jquery/dist/jquery.js', 'bower_components/bootstrap/dist/js/bootstrap.js'])
+  gulp.src(['bower_components/jquery/dist/jquery.js',
+            'bower_components/bootstrap/js/transition.js',
+            'bower_components/bootstrap/js/collapse.js'])
     .pipe(uglify())
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./js'));
