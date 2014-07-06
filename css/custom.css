@@ -8,12 +8,17 @@ body {
 
 .lead {
 	font-size: 21px;
-    font-weight: 300;
-    line-height: 1.4;
+  font-weight: 300;
+  line-height: 1.4;
 }
 
 .discography .col-md-3, .news .col-md-4 {
 	margin-bottom: 20px;
+}
+
+.discography img {
+  width: 150px;
+  height: 150px;
 }
 
 .page-header {
@@ -46,8 +51,8 @@ body {
 }
 
 ol, ul {
-    padding-left: 0px;
-    list-style-position: inside;
+  padding-left: 0px;
+  list-style-position: inside;
 }
 
 #banner, .well {
@@ -62,7 +67,7 @@ ol, ul {
 }
 
 #aboutcontent p a, #maincontent p a, .footer a {
-    color:red;
+  color:red;
 	text-decoration: none;
 }
 
@@ -82,20 +87,20 @@ ol, ul {
 }	
 
 #aboutcontent p a:hover, #maincontent p a:hover {
-    color:#fff;
-    background: red;
+  color:#fff;
+  background: red;
 	text-decoration: none;
 }
 
 #listen-latest {
 	display: block;
 	margin-top: 15px;
-	}
+}
 	
 .vinyl {
--webkit-border-radius: 75px;
--moz-border-radius: 75px;
-border-radius: 75px;	
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  border-radius: 75px;	
 }
 
 .label {
