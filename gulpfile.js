@@ -39,7 +39,7 @@ gulp.task('s3css', function() {
 });
 
 gulp.task('s3js', function() {
-  gulp.src(['css/all.js'])
+  gulp.src(['js/all.js'])
     .pipe(s3(aws, {uploadPath: 'js/'}));
 });
 
