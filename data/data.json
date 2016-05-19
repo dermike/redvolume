@@ -1,0 +1,95 @@
+{
+    "menu": [
+        {
+            "title": "Discography",
+            "id": "discography",
+            "submenu": [
+                {
+                    "title": "2007",
+                    "id": "releases2007"
+                },
+                {
+                    "title": "2008",
+                    "id": "releases2008"
+                },
+                {
+                    "title": "2009",
+                    "id": "releases2009"
+                },
+                {
+                    "title": "2010",
+                    "id": "releases2010"
+                },
+                {
+                    "title": "2011",
+                    "id": "releases2011"
+                },
+                {
+                    "title": "2012",
+                    "id": "releases2012"
+                },
+                {
+                    "title": "2013",
+                    "id": "releases2013"
+                },
+                {
+                    "title": "2014",
+                    "id": "releases2014"
+                },
+                {
+                    "title": "Licensed on other labels",
+                    "id": "licensed"
+                }
+            ]
+        },
+        {
+            "title": "About the label",
+            "id": "aboutlabel",
+            "submenu": [
+                {
+                    "title": "Label info",
+                    "id": "labelinfo"
+                },
+                {
+                    "title": "License music?",
+                    "id": "licensemusic"
+                },
+                {
+                    "title": "Press quotes",
+                    "id": "pressquotes"
+                }
+            ]
+        },
+        {
+            "title": "News",
+            "id": "aboutlabel",
+            "submenu": [
+                {
+                    "title": "Latest news",
+                    "id": "latestnews"
+                },
+                {
+                    "title": "News archive",
+                    "id": "newsarchive"
+                }
+            ]
+        }
+    ],
+    "examples": [
+        {
+            "title": "<span style='color: red'>About</span> Redvolume",
+            "body": "<p>The label was set up late 2006, by <a href=\"http://librarian.codes\">Mikael Jergefelt</a>, with the simple goal of releasing all kinds of dubstep sounds. Based in Stockholm, there's also a special focus on Scandinavian talents. Check out the discography section to discover quality nordic beats from L-Wiz (Sweden), JSL aka RUF (Denmark) and Tes La Rok (Finland).</p><p>Send am e-mail to <a href=\"mailto:mike@redvolume.com\">mike@redvolume.com</a> to get in touch!</p>",
+            "id": "aboutlabel-labelinfo"
+        },
+        {
+            "title": "<span style='color: red'>License</span> music?",
+            "body": "<p>We're always open to license music for other projects than our own, just get in touch. We'd love to hear about it!</p><p>For sync purposes, licenses can be purchased directly from <a href=\"http://www.syncsquirrel.com/music/red+volume\">SyncSquirrel</a>.</p><p>Check the discography section to see what we've done so far...</p>",
+            "id": "aboutlabel-licensemusic"
+        },
+        {
+            "title": "<span style='color: red'>Press</span> quotes",
+            "body": "<h4><span style='color: red;'>L-Wiz</span> - Mojito</h4><blockquote><p>An aural beauty is born from the fantastic Redvolume Camp.</p><small>Kmag Issue March 2009</small></blockquote><h4><span style='color: red;'>Catalogue</span> Part One</h4><blockquote><p>Label boss Mikael Jergefelt has been steadily tending to his Scandinavian flock over the past couple of years and nurturing a blossoming imprint.</p><small>ATM Magazine Issue 76 2008</small></blockquote><h4><span style='color: red;'>Recommended</span>: RVOL004</h4><blockquote><p>Redvolume's output has been strong so far, dealing out the filthy and the sublime in equal measures, and this twelve is no different.</p><small>iDJ Magazine 2007</small></blockquote>",
+            "id": "aboutlabel-pressquotes"
+        }
+    ]
+}
