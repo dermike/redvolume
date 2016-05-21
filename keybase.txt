@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/dermike
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://redvolume.com
+  * I am dermike (https://keybase.io/dermike) on keybase.
+  * I have a public key with fingerprint 4466 4CD4 5218 40E4 97A6  4FBA 1193 8CEC C3D9 9F36
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "44664cd4521840e497a64fba11938cecc3d99f36",
+            "host": "keybase.io",
+            "key_id": "11938cecc3d99f36",
+            "uid": "9603108a52d44c32171066a184fc4f00",
+            "username": "dermike"
+        },
+        "service": {
+            "hostname": "redvolume.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411501109,
+    "expire_in": 157680000,
+    "prev": "6850450196fc245c9a85f4f194b98baf0d0773c084f691cb3b7e8939deea84da",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.0.5
+Comment: https://keybase.io/crypto
+
+yMHqAnicO8LLzMDF+IJ93TJt8ZAbjKcPfCxlCFE8Y1qtlJSfUqlkVa2UnQqm0jLz
+0lOLCooy80qUrJRMTMzMTJJTTEyNDC1MDFJNLM0TzUzSkhINDS2NLZJTk5ONUywt
+04zNlHSUMvKLQTqAxiQlFqfqZeYDxYCc+MwUoCgW9aVgCUszA2NDA4tEU6MUE5Nk
+YyNDc0MDM7NEoG1pySZpBgYghcWpRXmJualA1SmpRbmZ2alKtTpKQMGyzORUkJNB
+NkMVFKWmlOXnlOam6iXn5wL1FhTll+Qn5+cApTJKSgqsQDpLKgtASstTk+KhhsQn
+ZealAP0N1FCWWlScmZ+nZGUIVJlckgky1dDE0NDUwNDQwFJHKbWiILMoNT4TpMLU
+3MzCAAhA1qSWAY00szA1MAGqtDRLSzYyMU22TLQwTTNJM7Q0SbK0SEpMM0gxMDc3
+TjYAes7M0jA5yTjJPNXC0tgyJTU10cIkJVEJ5K3CvHwlK1OgMxPTgUYWZ6bnJZaU
+FgH9fOhADAsDIxcDGysTKOYYuDgFYPF5dC37P8PTsauUtv/5kCOwOkurko3P0qY9
+VmGGA0+suOKE+KsNdjZ1K/q+zvPQv1cQ5uivwcMtJy+QKWqavbB67tsau4Y4T7ll
+k/wWlqq3lTY6JvlHebLOVj2cv8/LzNba9o9svGCfmNIq8Wa+Tw2aZ3l2dP/epaNy
+68FSse6WKq9rS6Zkr78w61OfRPTbe2tdFDqmsVXr7Dc/Nj1ka1dd4vGCHwtVvs+6
+nuZwoPyMwC2JuxZd61Yo2CSxmcauXcOw8R3v8mJu+9MPNi5QWemTrzSjtT9hxWzl
+m57f5hxSOPxA96V7VOur/8+sJM87cpVHHMp9w/+ulkWdwbFzrjh7k6Hi18/XLnlz
+TlrAemCyxUsAKbEIKA==
+=OS3k
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dermike
+
+==================================================================
