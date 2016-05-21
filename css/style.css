@@ -276,7 +276,7 @@ img {
 
 .label {
   display: inline;
-  padding: .2em .6em .3em;
+  padding: .2em .6em;
   font-size: 75%;
   font-weight: 700;
   color: #fff;
