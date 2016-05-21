@@ -92,7 +92,7 @@
       },
       scroll,
       scrollDown = () => {
-        chat.scrollTop += bubble.offsetHeight / 20;
+        chat.scrollTop += bubble.offsetHeight / 15;
       };
     bubble.classList.add('message');
     bubble.classList.add(type);
