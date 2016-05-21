@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   text-transform: none;
   color: #000;
-  margin: 1em 0;
+  margin: 1em 0 0.8em 0;
   line-height: 1.2;
 }
 
@@ -38,10 +38,12 @@ h2 {
 
 h3 {
   font-size: 24px;
+  margin-bottom: 0;
 }
 
 h4 {
   font-size: 18px;
+  margin-top: 0;
 }
 
 h6 {
@@ -77,13 +79,14 @@ h6 {
 
 .content {
   background-color: #e1e1e1;
-  background-image: url('../img/bg.jpg');
   background-size: cover;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   margin: 0;
+  z-index: 99;
+  outline: 0;
 }
 
 .content article {
@@ -92,8 +95,8 @@ h6 {
   overflow-y: auto;
 }
 
-.content article h3 {
-  margin-top: 2em;
+.content article h2 {
+  margin-top: 1.5em;
 }
 
 .content article.show {
@@ -102,12 +105,15 @@ h6 {
 
 .content .close {
   position: absolute;
-  top: 0;
+  top: 0.1em;
   right: 0;
   font-size: 2.5em;
-  margin-right: 0.5em;
+  margin-right: 0.35em;
   cursor: pointer;
   z-index: 101;
+  background-color: transparent;
+  border: none;
+  color: red;
 }
 
 .content.show {
@@ -248,13 +254,43 @@ blockquote {
   margin: 1em;
 }
 
-ul {
+ul, ol {
   padding: 0;
   list-style-position: inside;
   text-indent: -1em;
-  margin-left: 1em;
+  margin: 0 1em 2em 1em;
 }
 
 li {
   margin-bottom: 0.6em;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.vinyl {
+  border-radius: 75px;
+}
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  vertical-align: baseline;
+  border-radius: .25em;
+  white-space: nowrap;
+  line-height: 21px
+}
+
+.label-default {
+  background-color: #777;
+}
+
+.label-danger {
+  background-color: #d9534f;
 }

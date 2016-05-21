@@ -1,34 +1,87 @@
 {
   'use strict';
-  let webdata,
-    sleeping,
-    sleeptime = 45000;
+  let structure = {
+      'menu': [
+        {
+          'title': 'Discography',
+          'id': 'discography',
+          'submenu': [
+            {
+              'title': '2007',
+              'id': 'releases2007'
+            },
+            {
+              'title': '2008',
+              'id': 'releases2008'
+            },
+            {
+              'title': '2009',
+              'id': 'releases2009'
+            },
+            {
+              'title': '2010',
+              'id': 'releases2010'
+            },
+            {
+              'title': '2011',
+              'id': 'releases2011'
+            },
+            {
+              'title': '2012',
+              'id': 'releases2012'
+            },
+            {
+              'title': '2013',
+              'id': 'releases2013'
+            },
+            {
+              'title': '2014',
+              'id': 'releases2014'
+            },
+            {
+              'title': 'Licensed on other labels',
+              'id': 'licensed'
+            }
+          ]
+        },
+        {
+          'title': 'About the label',
+          'id': 'aboutlabel',
+          'submenu': [
+            {
+              'title': 'Label info',
+              'id': 'labelinfo'
+            },
+            {
+              'title': 'License music',
+              'id': 'licensemusic'
+            },
+            {
+              'title': 'Press quotes',
+              'id': 'pressquotes'
+            }
+          ]
+        },
+        {
+          'title': 'News',
+          'id': 'news',
+          'submenu': [
+            {
+              'title': 'Latest news',
+              'id': 'latestnews'
+            },
+            {
+              'title': 'News archive',
+              'id': 'newsarchive'
+            }
+          ]
+        }
+      ]
+    },
+    idle,
+    idletime = 45000;
   const chat = document.querySelector('.chat');
   const content = document.querySelector('.content');
-  const getJSON = (url, cb) => {
-    let request = new XMLHttpRequest();
-    request.open('GET', url, true);
-    request.timeout = 5000;
-    request.onload = () => {
-      if (request.status >= 200 && request.status < 400) {
-        try {
-          let response = JSON.parse(request.responseText);
-          cb(response);
-        } catch (e) {
-          cb(false);
-        }
-      } else {
-        cb(false);
-      }
-    };
-    request.ontimeout = () => {
-      cb(false);
-    };
-    request.onerror = () => {
-      cb(false);
-    };
-    request.send();
-  };
 
   const newMessage = (message, type = 'user') => {
     let bubble = document.createElement('section'),
@@ -68,18 +121,9 @@
     return replies[Math.floor(Math.random() * replies.length)];
   };
 
-  const startAlternatives = () => {
-    let startReplies = [
-      'Yeah, go ahead! &#x1F680;',
-      'Sure! &#x1F44D;',
-      'Why not! &#x1F44C;'
-    ];
-    newMessage(`<button class="choice style">${randomReply(startReplies)}</button>`);
-  };
-
   const checkUp = () => {
     let lastMessage = document.querySelector('.active'),
-      sleepingReplies = [
+      idleReplies = [
         'Did you fall asleep? &#x1F634;',
         'Coffee break? &#x2615;',
         'Still there?',
@@ -88,56 +132,47 @@
     if (lastMessage) {
       lastMessage.parentNode.removeChild(lastMessage);
     }
-    newMessage(randomReply(sleepingReplies), 'bot');
+    newMessage(randomReply(idleReplies), 'bot');
     setTimeout(() => {
       let helpReplies = [
-        'Undrar du något kan du ringa <a href="tel:0852484000">08-524 840 00</a>, eller komma in till oss i KIB-labb mellan 11-16 på vardagar. &#x1F46B;',
-        'Kom in till oss i KIB-labb mellan 11-16 på vardagar om du behöver mer hjälp eller ring <a href="tel:0852484000">08-524 840 00</a>. &#x1F4F2;',
-        'Vill du prata referenser med en riktig person? &#x1F4AC; Kom in till oss i KIB-labb mellan 11-16 på vardagar.'
+        'Don\'t like this conversation? Send an email to <a href="mailto:mike@redvolume.com">mike@redvolume.com</a> if you want a real one. &#x1F680;',
+        'Not finding what you\'re looking for? Send an email to <a href="mailto:mike@redvolume.com">mike@redvolume.com</a> with any questions...',
+        'Wanna talk to a real person? &#x1F4AC; Fire off an email to <a href="mailto:mike@redvolume.com">mike@redvolume.com</a>. &#x1F525;'
       ];
       newMessage(randomReply(helpReplies), 'bot');
       setTimeout(() => {
         let knowMoreReplies = [
-            'Jag vill veta mer om hur jag refererar &#x1F61E;',
-            'Vad är referenser nu igen? &#x1F631;',
-            'Kan jag läsa mer om referenser någonstans? &#x1F680;'
+            'I just wanna listen to the music &#x1F61E;',
+            'Where can I listen to the music? &#x1F631;',
+            'I can haz moosik? &#x1F63B;'
           ],
-          styleAgainReplies = [
-            'Låt mig välja referensstil igen &#x1F4A1;',
-            'Jag vill sätta igång! &#x1F525;',
-            'Ok, kör &#x1F697;'
-          ],
-          categoriesAgainReplies = [
-            'Visa kategorierna igen tack &#x2705;',
-            'Ok, kör igen! &#x1F697;',
-            'Jag vill välja källa &#x1F44D;'
+          menuAgainReplies = [
+            'Show me the menu again please &#x2705;',
+            'Ok, go! &#x1F697;',
+            'I wanna check something &#x1F44D;'
           ];
-        if (webdata) {
-          newMessage(`<button class="choice newmenu showinfo">${randomReply(knowMoreReplies)}</button><br /><button class="choice newmenu showmenu">${randomReply(categoriesAgainReplies)}</button>`);
-        } else {
-          newMessage(`<button class="choice newmenu showinfo">${randomReply(knowMoreReplies)}</button><br /><button class="choice newmenu showstart">${randomReply(styleAgainReplies)}</button>`);
-        }
+        newMessage(`<button class="choice newmenu showinfo">${randomReply(knowMoreReplies)}</button><br /><button class="choice newmenu showmenu">${randomReply(menuAgainReplies)}</button>`);
       }, 300);
     }, 500);
   };
 
-  const init = again => {
+  const init = () => {
     let welcomeReplies = [
-        'Hi, welcome to Redvolume Records! &#x1F603; This is not the most active label at the moment. Would you like to continue anyway? &#x1F37B;',
-        'Hello! &#x1F44B; Welcome to Redvolume Records! We\'re not very active at the moment, would you still like to know more?'
-      ],
-      againReplies = [
-        'Hmm, try again &#x1F635;',
-        'Typical. If it\'s not your connection, the fault could be here &#x1F6A7; Please try again.',
-        '&#x1F44E; Try again or come back later...'
-      ];
-    sleeping = window.setInterval(() => {
-      window.clearInterval(sleeping);
+      'Hi, welcome to Redvolume Records! &#x1F603; This is not the most active label at the moment. Would you like to continue anyway? &#x1F37B;',
+      'Hello! &#x1F44B; Welcome to Redvolume Records! We\'re not very active at the moment, would you still like to know more?'
+    ];
+    idle = window.setInterval(() => {
+      window.clearInterval(idle);
       checkUp();
-    }, sleeptime);
-    again ? newMessage(randomReply(againReplies), 'bot') : newMessage(randomReply(welcomeReplies), 'bot');
+    }, idletime);
+    newMessage(randomReply(welcomeReplies), 'bot');
     setTimeout(() => {
-      startAlternatives();
+      let startReplies = [
+        'Yeah, go ahead! &#x1F680;',
+        'Sure! &#x1F44D;',
+        'Why not! &#x1F44C;'
+      ];
+      newMessage(`<button class="choice start">${randomReply(startReplies)}</button>`);
     }, 300);
   };
 
@@ -165,57 +200,22 @@
     }
     setTimeout(() => {
       again ? newMessage(randomReply(againReplies), 'bot') : newMessage(randomReply(replies), 'bot');
-      webdata.menu.forEach((val, index) => {
+      structure.menu.forEach((val, index) => {
         menu += `<button class="choice menu" data-submenu="${index}">${val.title}</button>`;
       });
       setTimeout(() => {
         newMessage(menu);
       }, 500);
     }, 500);
-    sleeping = window.setInterval(() => {
-      window.clearInterval(sleeping);
+    idle = window.setInterval(() => {
+      window.clearInterval(idle);
       checkUp();
-    }, sleeptime);
-  };
-
-  const loadStyle = () => {
-    let replies = [
-      'Ok, hold on... &#x1F4AA;',
-      'One moment... &#x1F440;',
-      'Just a second... &#x1F60E;'
-    ];
-    newMessage(randomReply(replies), 'bot');
-    getJSON('data/data.json', data => {
-      if (data) {
-        let examples = '';
-        examples += '<span class="close">&times;</span>';
-        webdata = data;
-        webdata.examples.forEach(val => {
-          examples += `<article id="${val.id}">
-                         <h3>${val.title}</h3>
-                         ${val.body}
-                       </article>`;
-        });
-        content.innerHTML = examples;
-        showMenu();
-      } else {
-        let errorReplies = [
-          '&#x1F622; Oops, something went wrong...',
-          'Grrr... &#x1F621;',
-          'Something\'s not working at the moment &#x1F62B;'
-        ];
-        window.clearInterval(sleeping);
-        newMessage(randomReply(errorReplies), 'bot');
-        setTimeout(() => {
-          init(true);
-        }, 300);
-      }
-    });
+    }, idletime);
   };
 
   const menuClick = clicked => {
     let submenu = '',
-      menuChoice = webdata.menu[clicked.getAttribute('data-submenu')],
+      menuChoice = structure.menu[clicked.getAttribute('data-submenu')],
       replies = [
         '&#x1F44D; Here\'s what I have on that...',
         'See anything interesting? &#x1F648;',
@@ -236,34 +236,52 @@
     }, 500);
   };
 
+  const toggleContent = article => {
+    let buttons = chat.querySelectorAll('button');
+    if (article) {
+      let articleImages = article.querySelectorAll('img[data-img]');
+      for (let i = 0; i < articleImages.length; i += 1) {
+        let el = articleImages[i];
+        el.src = el.getAttribute('data-img');
+        el.removeAttribute('data-img');
+      }
+      article.classList.add('show');
+      chat.setAttribute('aria-hidden', 'true');
+      content.classList.add('show');
+      content.setAttribute('aria-hidden', 'false');
+      content.tabIndex = '0';
+      content.focus();
+    } else {
+      content.classList.remove('show');
+      content.setAttribute('aria-hidden', 'true');
+      content.tabIndex = '-1';
+      chat.setAttribute('aria-hidden', 'false');
+      setTimeout(() => {
+        let active = document.querySelector('.content article.show');
+        if (active) {
+          active.classList.remove('show');
+          chat.querySelector(`button[data-example="${active.id}"]`).focus();
+        }
+      }, 300);
+    }
+    for (let i = 0; i < buttons.length; i += 1) {
+      buttons[i].tabIndex = article ? '-1' : '0';
+    }
+  };
+
   const subMenuClick = clicked => {
     if (clicked.classList.contains('newmenu')) {
       showMenu(true);
     } else {
-      document.getElementById(clicked.getAttribute('data-example')).classList.add('show');
-      content.classList.add('show');
+      toggleContent(document.getElementById(clicked.getAttribute('data-example')));
     }
-  };
-
-  const closeContent = () => {
-    content.classList.remove('show');
-    setTimeout(() => {
-      let active = document.querySelector('.content article.show');
-      if (active) {
-        active.classList.remove('show');
-      }
-    }, 300);
   };
 
   document.addEventListener('click', e => {
     if (e.target.classList.contains('choice')) {
-      window.clearInterval(sleeping);
+      window.clearInterval(idle);
       if (!e.target.classList.contains('submenu')) {
         makeUserBubble(e.target);
-      }
-
-      if (e.target.classList.contains('style')) {
-        loadStyle(e.target.textContent.toLowerCase());
       }
 
       if (e.target.classList.contains('menu')) {
@@ -274,8 +292,8 @@
         subMenuClick(e.target);
       }
 
-      if (e.target.classList.contains('showstart')) {
-        startAlternatives();
+      if (e.target.classList.contains('start')) {
+        showMenu();
       }
 
       if (e.target.classList.contains('showmenu')) {
@@ -284,33 +302,29 @@
 
       if (e.target.classList.contains('showinfo')) {
         let infoReplies = [
-          'Här kan du läsa mer om hur du refererar',
-          'På vår webbplats kan du läsa mer om referenser',
-          'Ok, kolla den här länken:'
+          'Here\'s the quickest ways to listen...',
+          'We recommend ',
+          'Ok, check these links:'
         ];
-        newMessage(`${randomReply(infoReplies)} <a target="_new" href="https://kib.ki.se/skriva-referera/skriva-referenser">https://kib.ki.se/skriva-referera/skriva-referenser</a>`, 'bot');
+        newMessage(`${randomReply(infoReplies)} <a target="_new" href="http://open.spotify.com/user/dermike/playlist/6WU5ehSeXngZ2M4i2O6v01">Spotify</a> for streaming or <a target="_new" href="http://www.junodownload.com/labels/Redvolume+Sweden/releases/">Juno Download</a> for digital downloads.`, 'bot');
         setTimeout(() => {
           let okReplies = [
             'OK &#x1F60E;',
             'How do I get back? &#x1F312;',
-            'Ok, I\'m ready! &#x1F44C;'
+            'Ok, I\'m done! &#x1F44C;'
           ];
-          if (webdata) {
-            newMessage(`<button class="choice newmenu showmenu">${randomReply(okReplies)}</button>`);
-          } else {
-            newMessage(`<button class="choice newmenu showstart">${randomReply(okReplies)}</button>`);
-          }
+          newMessage(`<button class="choice newmenu showmenu">${randomReply(okReplies)}</button>`);
         }, 300);
       }
     }
     if (e.target.classList.contains('close')) {
-      closeContent();
+      toggleContent();
     }
   });
 
   document.addEventListener('keydown', e => {
     if (e.keyCode === 27) {
-      closeContent();
+      toggleContent();
     }
   });
 
