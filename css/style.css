@@ -113,11 +113,11 @@ h6 {
   z-index: 101;
   background-color: transparent;
   border: none;
-  color: red;
+  color: #990000;
   padding: 0;
 }
 
-.content.show {
+.content[aria-hidden="false"] {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
@@ -294,4 +294,8 @@ img {
 
 .label-danger {
   background-color: #d9534f;
+}
+
+.red {
+  color: #990000;
 }

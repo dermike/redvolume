@@ -92,16 +92,17 @@
       },
       scroll,
       scrollDown = () => {
-        chat.scrollTop += bubble.offsetHeight / 15;
+        chat.scrollTop += Math.floor(bubble.offsetHeight / 18);
       };
     bubble.classList.add('message');
     bubble.classList.add(type);
     bubble.innerHTML = `<p>${message}</p>`;
     chat.appendChild(bubble);
 
-    scroll = window.setInterval(scrollDown, 10);
+    scroll = window.setInterval(scrollDown, 16);
     setTimeout(() => {
       window.clearInterval(scroll);
+      chat.scrollTop = chat.scrollHeight;
     }, 300);
 
     setTimeout(() => {
@@ -247,12 +248,10 @@
       }
       article.classList.add('show');
       chat.setAttribute('aria-hidden', 'true');
-      content.classList.add('show');
       content.setAttribute('aria-hidden', 'false');
       content.tabIndex = '0';
       content.focus();
     } else {
-      content.classList.remove('show');
       content.setAttribute('aria-hidden', 'true');
       content.tabIndex = '-1';
       chat.setAttribute('aria-hidden', 'false');
