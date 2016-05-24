@@ -229,7 +229,7 @@
       ];
     newMessage(randomReply(replies), 'bot');
     menuChoice.submenu.forEach(val => {
-      submenu += `<button class="choice submenu" data-example="${menuChoice.id}-${val.id}">${val.title}</button>`;
+      submenu += `<button class="choice submenu" data-content="${menuChoice.id}-${val.id}">${val.title}</button>`;
     });
     submenu += `<br /><button class="choice submenu newmenu">${randomReply(userReplies)}</button>`;
     setTimeout(() => {
@@ -255,11 +255,14 @@
       content.setAttribute('aria-hidden', 'true');
       content.tabIndex = '-1';
       chat.setAttribute('aria-hidden', 'false');
+      if (history.state && history.state.id === 'content') {
+        history.back();
+      }
       setTimeout(() => {
         let active = document.querySelector('.content article.show');
         if (active) {
           active.classList.remove('show');
-          chat.querySelector(`button[data-example="${active.id}"]`).focus();
+          chat.querySelector(`button[data-content="${active.id}"]`).focus();
         }
       }, 300);
     }
@@ -272,7 +275,8 @@
     if (clicked.classList.contains('newmenu')) {
       showMenu(true);
     } else {
-      toggleContent(document.getElementById(clicked.getAttribute('data-example')));
+      toggleContent(document.getElementById(clicked.getAttribute('data-content')));
+      history.pushState({'id': 'content'}, '', `#${clicked.getAttribute('data-content')}`);
     }
   };
 
@@ -325,6 +329,10 @@
     if (e.keyCode === 27) {
       toggleContent();
     }
+  });
+
+  window.addEventListener('popstate', () => {
+    toggleContent();
   });
 
   setTimeout(() => {
