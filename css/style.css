@@ -87,7 +87,6 @@ h6 {
   transition: transform 0.35s ease;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  will-change: transform;
   margin: 0;
   outline: 0;
 }
