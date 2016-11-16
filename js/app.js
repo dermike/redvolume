@@ -227,13 +227,15 @@
         `Show me the menu again &#x1F60B;`,
         `${menuChoice.title} was interesting, but show me something else... &#x1F612;`
       ];
-    newMessage(randomReply(replies), 'bot');
     menuChoice.submenu.forEach(val => {
       submenu += `<button class="choice submenu" data-content="${menuChoice.id}-${val.id}">${val.title}</button>`;
     });
     submenu += `<br /><button class="choice submenu newmenu">${randomReply(userReplies)}</button>`;
     setTimeout(() => {
-      newMessage(submenu);
+      newMessage(randomReply(replies), 'bot');
+      setTimeout(() => {
+        newMessage(submenu);
+      }, 300);
     }, 500);
   };
 
