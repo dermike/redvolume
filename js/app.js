@@ -224,7 +224,7 @@
       ],
       userReplies = [
         `I wanna read about something other than ${menuChoice.title.toLowerCase()} &#x1F61C;`,
-        `Show me the menu again &#x1F60B;`,
+        'Show me the menu again &#x1F60B;',
         `${menuChoice.title} was interesting, but show me something else... &#x1F612;`
       ];
     menuChoice.submenu.forEach(val => {
