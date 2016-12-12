@@ -311,15 +311,17 @@
           'We recommend ',
           'Ok, check these links:'
         ];
-        newMessage(`${randomReply(infoReplies)} <a target="_new" href="http://open.spotify.com/user/dermike/playlist/6WU5ehSeXngZ2M4i2O6v01">Spotify</a> for streaming or <a target="_new" href="http://www.junodownload.com/labels/Redvolume+Sweden/releases/">Juno Download</a> for digital downloads.`, 'bot');
         setTimeout(() => {
-          let okReplies = [
-            'OK &#x1F60E;',
-            'How do I get back? &#x1F312;',
-            'Ok, I\'m done! &#x1F44C;'
-          ];
-          newMessage(`<button class="choice newmenu showmenu">${randomReply(okReplies)}</button>`);
-        }, 300);
+          newMessage(`${randomReply(infoReplies)} <a target="_new" href="http://open.spotify.com/user/dermike/playlist/6WU5ehSeXngZ2M4i2O6v01">Spotify</a> for streaming or <a target="_new" href="http://www.junodownload.com/labels/Redvolume+Sweden/releases/">Juno Download</a> for digital downloads.`, 'bot');
+          setTimeout(() => {
+            let okReplies = [
+              'OK &#x1F60E;',
+              'How do I get back? &#x1F312;',
+              'Ok, I\'m done! &#x1F44C;'
+            ];
+            newMessage(`<button class="choice newmenu showmenu">${randomReply(okReplies)}</button>`);
+          }, 300);
+        }, 500);
       }
     }
     if (e.target.classList.contains('close')) {
