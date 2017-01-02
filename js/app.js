@@ -189,7 +189,8 @@
       againReplies = [
         'Here\'s what I can tell you about... &#x1F3A4;',
         'Ok, check this out! &#x1F447;',
-        'Anything else you\'re interested in? &#x1F64F;'
+        'Anything else you\'re interested in? &#x1F64F;',
+        '&#x1F42D; A wild Rattata appears... Oh, sorry.'
       ],
       replies = [
         'What would you like to know more about? &#x1F4BF; &#x1F3B5; &#x1F3A7;',
@@ -220,12 +221,15 @@
       replies = [
         '&#x1F44D; Here\'s what I have on that...',
         'See anything interesting? &#x1F648;',
-        'Any of this cool?'
+        'Any of this cool? &#x1F60E;',
+        'Check this out &#x2728;',
+        '&#x26A1; So yeah...'
       ],
       userReplies = [
         `I wanna read about something other than ${menuChoice.title.toLowerCase()} &#x1F61C;`,
         'Show me the menu again &#x1F60B;',
-        `${menuChoice.title} was interesting, but show me something else... &#x1F612;`
+        `${menuChoice.title} was interesting, but show me something else... &#x1F612;`,
+        'What were those other things again? &#x1F60B;'
       ];
     menuChoice.submenu.forEach(val => {
       submenu += `<button class="choice submenu" data-content="${menuChoice.id}-${val.id}">${val.title}</button>`;
