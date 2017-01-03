@@ -329,6 +329,7 @@
       }
     }
     if (e.target.classList.contains('close')) {
+      e.preventDefault();
       toggleContent();
     }
   });

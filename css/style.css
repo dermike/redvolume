@@ -125,6 +125,7 @@ h6 {
   border: none;
   color: #990000;
   padding: 0;
+  text-decoration: none;
 }
 
 .content[aria-hidden="false"] {
@@ -308,4 +309,51 @@ img {
 
 .red {
   color: #990000;
+}
+
+/* No JavaScript styles */
+
+.no-js .content article:target ~ noscript #nojs-menu, .no-js .close {
+  display: none;
+}
+
+.no-js .content article:target, .content article#nojs-menu, .no-js .content article:target ~ a.close {
+  display: block;
+}
+
+.no-js .content article:target {
+  background-color: #e1e1e1;
+  min-height: 100%;
+}
+
+.no-js .content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  background-color: #fff;
+}
+
+.no-js .content img {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .no-js .message.bot {
+    margin-left: -1em;
+  }
+  .no-js .message.selected {
+    margin-right: -1em;
+  }
+}
+
+.no-js section.user a {
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #e1e1e1;
+  color: #232323;
+  border: 0;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  margin: 0 0.3em 0.5em 0;
+  display: inline-block;
+  text-decoration: none;
 }
