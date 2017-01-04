@@ -342,9 +342,19 @@
 
   window.addEventListener('popstate', () => {
     toggleContent();
+    window.location.hash = '';
   });
 
   setTimeout(() => {
     init();
   }, 500);
+
+  content.style.display = 'none';
+  document.body.classList.remove('no-js');
+  setTimeout(() => {
+    content.style.display = 'block';
+    if (document.getElementById(window.location.hash.split('#')[1])) {
+      toggleContent(document.getElementById(window.location.hash.split('#')[1]));
+    }
+  }, 350);
 }
