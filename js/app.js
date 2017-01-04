@@ -354,7 +354,9 @@
   setTimeout(() => {
     content.style.display = 'block';
     if (document.getElementById(window.location.hash.split('#')[1])) {
-      toggleContent(document.getElementById(window.location.hash.split('#')[1]));
+      setTimeout(() => {
+        toggleContent(document.getElementById(window.location.hash.split('#')[1]));
+      }, 10);
     }
   }, 350);
 }
