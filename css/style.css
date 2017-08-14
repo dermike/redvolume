@@ -87,6 +87,8 @@ h6 {
 .chat {
   height: 100%;
   padding: 1em;
+  margin: 0;
+  text-indent: initial;
 }
 
 .content {
@@ -126,6 +128,10 @@ h6 {
   color: #990000;
   padding: 0;
   text-decoration: none;
+}
+
+.content[aria-hidden="true"] button, .content[aria-hidden="true"] a {
+  display: none;
 }
 
 .content[aria-hidden="false"] {
@@ -175,7 +181,7 @@ h6 {
   color: #fff;
 }
 
-.message.user p {
+.message.user nav {
   margin: 0.25em 0 0 0;
   text-align: center;
 }
@@ -313,6 +319,11 @@ img {
 
 /* No JavaScript styles */
 
+#nojs-menu ul {
+  margin: 0;
+  text-indent: initial;
+}
+
 .no-js .content article:target ~ noscript #nojs-menu, .no-js .close {
   display: none;
 }
@@ -345,7 +356,7 @@ img {
   }
 }
 
-.no-js section.user a {
+.no-js li.user a {
   font-size: 1em;
   line-height: 1.5;
   background-color: #e1e1e1;

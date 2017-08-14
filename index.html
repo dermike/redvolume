@@ -40,7 +40,8 @@
   </head>
   <body class="no-js">
     <div class="container">
-      <article class="chat" role="log" aria-live="polite" aria-atomic="false">
+      <article role="log" aria-live="polite" aria-atomic="false">
+        <ul class="chat"></ul>
       </article>
       <div class="content" role="document" aria-label="Information">
         <article id="discography-releases2014">
@@ -524,36 +525,38 @@
         <a href="#" class="close" aria-label="Close information" role="button">&times;</a>
         <noscript>
           <article id="nojs-menu">
-            <section class="message bot show"><p>Hello! &#x1F44B; Welcome to Redvolume Records! We're not very active at the moment, but check the links below for more information...</p></section>
-            <section class="message user show selected"><p>Discography</p></section>
-            <section class="message user active show">
-              <p>
-                <a href="#discography-releases2007">2007</a>
-                <a href="#discography-releases2008">2008</a>
-                <a href="#discography-releases2009">2009</a>
-                <a href="#discography-releases2010">2010</a>
-                <a href="#discography-releases2011">2011</a>
-                <a href="#discography-releases2012">2012</a>
-                <a href="#discography-releases2013">2013</a>
-                <a href="#discography-releases2014">2014</a>
-                <a href="#discography-licensed">Licensed on other labels</a>
-              </p>
-            </section>
-            <section class="message user show selected"><p>About the label</p></section>
-            <section class="message user active show">
-              <p>
-                <a href="#aboutlabel-labelinfo">Label info</a>
-                <a href="#aboutlabel-licensemusic">License music</a>
-                <a href="#aboutlabel-pressquotes">Press quotes</a>
-              </p>
-            </section>
-            <section class="message user show selected"><p>News</p></section>
-            <section class="message user active show">
-              <p>
-                <a href="#news-latestnews">Latest news</a>
-                <a href="#news-newsarchive">News archive</a>
-              </p>
-            </section>
+            <ul>
+              <li class="message bot show"><p>Hello! &#x1F44B; Welcome to Redvolume Records! We're not very active at the moment, but check the links below for more information...</p></li>
+              <li class="message user show selected" id="discography-label"><p>Discography</p></li>
+              <li class="message user active show">
+                <nav aria-labelledby="discography-label">
+                  <a href="#discography-releases2007">2007</a>
+                  <a href="#discography-releases2008">2008</a>
+                  <a href="#discography-releases2009">2009</a>
+                  <a href="#discography-releases2010">2010</a>
+                  <a href="#discography-releases2011">2011</a>
+                  <a href="#discography-releases2012">2012</a>
+                  <a href="#discography-releases2013">2013</a>
+                  <a href="#discography-releases2014">2014</a>
+                  <a href="#discography-licensed">Licensed on other labels</a>
+                </nav>
+              </li>
+              <li class="message user show selected" id="about-label"><p>About the label</p></li>
+              <li class="message user active show">
+                <nav aria-labelledby="about-label">
+                  <a href="#aboutlabel-labelinfo">Label info</a>
+                  <a href="#aboutlabel-licensemusic">License music</a>
+                  <a href="#aboutlabel-pressquotes">Press quotes</a>
+                </nav>
+              </li>
+              <li class="message user show selected" id="news-label"><p>News</p></li>
+              <li class="message user active show">
+                <nav aria-labelledby="news-label">
+                  <a href="#news-latestnews">Latest news</a>
+                  <a href="#news-newsarchive">News archive</a>
+                </nav>
+              </li>
+            </ul>
           </article>
         </noscript>
       </div>
