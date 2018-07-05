@@ -189,8 +189,7 @@
       againReplies = [
         'Here\'s what I can tell you about... &#x1F3A4;',
         'Ok, check this out! &#x1F447;',
-        'Anything else you\'re interested in? &#x1F64F;',
-        '&#x1F42D; A wild Rattata appears... Oh, sorry.'
+        'Anything else you\'re interested in? &#x1F64F;'
       ],
       replies = [
         'What would you like to know more about? &#x1F4BF; &#x1F3B5; &#x1F3A7;',
