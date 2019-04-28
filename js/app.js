@@ -39,6 +39,10 @@
               'id': 'releases2014'
             },
             {
+              'title': '2019',
+              'id': 'releases2019'
+            },
+            {
               'title': 'Licensed on other labels',
               'id': 'licensed'
             }
